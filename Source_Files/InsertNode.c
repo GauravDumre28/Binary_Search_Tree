@@ -4,7 +4,7 @@
 
 #include "header.h"
 
-//Function to Insert Node in BST
+// Recursion Function to Insert Node in BST
 Record* insert_node(Record* node, int key) 
 {
     // If Node is Empty, Calling Function to Create New Node

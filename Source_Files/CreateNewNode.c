@@ -11,7 +11,7 @@ Record *create_new_node(int item)
     Record *new_node = (Record *)malloc(sizeof(Record)); 
     
     // Assigning Key and Default Pointer to Node
-    print("\nInserted Key: %d\n", item);
+    print("\nSUCCESS: Inserted Key: %d\n", item);
     new_node->key = item;
     new_node->left = new_node->right = NULL; 
 

@@ -1,12 +1,14 @@
+/* File Contains Function to Print Minimum Value Node 
+ *  Returns: Nothing
+ */
+
 #include "header.h"
 
-Record *min_value_node(Record* node) 
-{ 
-    Record* current = node; 
-
-    while (current && current->left != NULL) {
-        current = current->left;
+// Function to Print Minimum Value Node
+Record *min_value_node(Record *node) 
+{
+    while (node && node->left != NULL) {
+        node = node->left;
     }
-
-    return current; 
+    return node;
 }

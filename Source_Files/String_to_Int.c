@@ -1,4 +1,7 @@
-// Including Header File
+/* File Contains Function to Convert String Data to Integer
+ *  Returns: SUCCESS/FAILURE
+ */
+
 #include"header.h"
 
 // Function to Convert String Data to Integer

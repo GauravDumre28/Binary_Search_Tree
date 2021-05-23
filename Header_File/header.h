@@ -15,40 +15,56 @@
 #define FAILURE 0
 #define print printf
 
-//Structure for Node of BST
+// Declaring Global Variables
+unsigned int node_found;
+
+// Structure for Node of BST
 typedef struct BST_Records {
     struct BST_Records *left;
     unsigned int key;
     struct BST_Records *right;
 }Record;
 
+// Function for Switch Case
+int switch_case(Record *);
+
 // Function to Create New Node
 Record *create_new_node(int);
 
-// Function to Insert Node
+// Recursion Function to Insert Node
 Record *insert_node(Record *, int);
 
-// Function to Delete Node
+// Recursion Function to Delete Node
 Record *delete_node(Record *, int);
 
-//Function to Print Notation 
-void print_notation(Record*);
+// Recursion Function to Search Node in BST
+void search_node(Record *, int);
 
-// Function to Display All Nodes in Inorder Manner
+// Function to Print Minimum Value Node
+Record *min_value_node(Record *);
+
+// Function to Print Maximum Value Node
+Record *max_value_node(Record *);
+
+// Function to Print Notation 
+void print_notation(Record *);
+
+// Recursion Function to Display All Nodes in Inorder Manner
 void inorder_traverse(Record *);
 
-// Function to Display All Nodes in Preorder Manner
+// Recursion Function to Display All Nodes in Preorder Manner
 void preorder_traverse(Record *);
 
-// Function to Display All Nodes in Postorder Manner
+// Recursion Function to Display All Nodes in Postorder Manner
 void postorder_traverse(Record *);
+
+// Function to Print Node in BST
+void print_node(Record *);
 
 // Function to Convert String to Integer
 int str_to_int(char *, unsigned int *);
 
 // Function to Validate the Input as Integer
 int input_integer();
-
-Record *min_value_node(Record *);
 
 #endif

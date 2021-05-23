@@ -1,30 +1,49 @@
+/* File Contains Function to Search Node in BST 
+ *  Returns: Void
+ */
+
 #include "header.h"
 
-Record* delete_node(Record* root, int key) 
+// Recursion Function to Delete Node in BST
+Record *delete_node(Record* node, int value) 
 {
-    if (root == NULL) {
-        return root;
+    // Checking if Node is NULL
+    if(node == NULL) {
+        return NULL;
     }
 
-    if (key < root->key) {
-        root->left = delete_node(root->left, key);
-    } else if (key > root->key) {
-        root->right = delete_node(root->right, key);
-    } else {
-        if (root->left == NULL) {
-            Record *temp = root->right; 
-            free(root); 
-            return temp; 
-        } else if (root->right == NULL) {
-            Record *temp = root->left;
-            free(root);
-            return temp;
+    // Declaring Temporary Structure Pointer
+    Record* temp = node;
+
+    // Checking and Deleting Node
+    if(value == node->key) {
+        node_found = 1;
+
+        if((NULL != node->left) && (NULL != node->right)) {
+            node = node->right;
+
+            while (node && node->left != NULL) {
+                node = node->left;
+            }
+            temp->key = node->key;
+            temp->right = delete_node(temp->right, node->key);
+        } else {
+            if((NULL == node->left) && (NULL == node->right)) {
+                temp = NULL;
+            } else if((NULL == node->left) && (NULL != node->right)) {
+                temp = node->right;
+            } else if((NULL != node->left) && (NULL == node->right)) {
+                temp = node->left;
+            }
+            
+            node->left = node->right = NULL;
+            free(node);
         }
-        
-        Record* temp = min_value_node(root->right); 
-        root->key = temp->key;
-        root->right = delete_node(root->right, temp->key); 
+    } else if(value < node->key) {
+        node->left = delete_node(node->left, value);
+    } else if (value > node->key) {
+        node->right = delete_node(node->right, value);
     }
     
-    return root; 
+    return temp;  
 }

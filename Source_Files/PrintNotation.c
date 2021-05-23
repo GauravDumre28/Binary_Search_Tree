@@ -4,8 +4,8 @@
 
 #include "header.h"
 
-//Function to Print Notation 
-void print_notation(Record* node)
+// Function to Print Notation 
+void print_notation(Record *node)
 {
     // Printing Inorder Notation 
     print ("\n\n-- Inorder Traversal of BST --\n"); 

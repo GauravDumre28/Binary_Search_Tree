@@ -4,7 +4,7 @@
 
 #include "header.h"
 
-// Function to Display All Nodes in Preorder Manner
+// Recursion Function to Display All Nodes in Preorder Manner
 void preorder_traverse(Record *node) 
 {
     if (node != NULL) {
