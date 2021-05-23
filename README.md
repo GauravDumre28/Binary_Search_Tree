@@ -4,7 +4,10 @@ Binary Search Tree implementation using C programming language to Insert node in
     
     1. Insert Node
     2. Delete Node
-    3. Print Notation
+    3. Search Node
+    4. Minimum Value Node
+    5. Maximum Value Node
+    6. Print Notation (Inorder, Preorder and Postorder)
 
 Project is being organized in folder structure where 'Header_File' has 'header.h', 'Source_Files' has all source files, 'Object_Files' has all object files, 'Executable File' has executable.
 
@@ -17,8 +20,9 @@ Make File options:-
     make clean -> To remove existing object file and executable file
 [These are basic operation, for more options check the Make file.]
 
-C concepts included in Circular Linked List project,
+C concepts included in Binary Search Tree project,
     
+    - Recursion Function
     - Function
     - Pointer
     - String Manipulation
