@@ -1,6 +1,6 @@
 # Binary Search Tree
 
-Binary Search Tree implementation using C programming language to Insert node in BST and to Delete a node from BST. Also includes representation of BST using Inorder, Preorder and Postorder Notation. C program includes following options,
+Binary Search Tree implementation using C programming language to Insert node in BST and to Delete a node from BST. Dynamic memory allocation is used to create every node and also released the dynamically allocated memory at end of program. Also includes representation of BST using Inorder, Preorder and Postorder Notation. C program includes following options,
     
     1. Insert Node
     2. Delete Node
