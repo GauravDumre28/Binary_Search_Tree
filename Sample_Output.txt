@@ -1,0 +1,313 @@
+gaurav@gaurav:~/Binary_Search_Tree$ make
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/Free_BST.o Source_Files/Free_BST.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/InorderTraverse.o Source_Files/InorderTraverse.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/DeleteNode.o Source_Files/DeleteNode.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/InputInteger.o Source_Files/InputInteger.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/String_to_Int.o Source_Files/String_to_Int.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/CreateNewNode.o Source_Files/CreateNewNode.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/Main.o Source_Files/Main.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/SearchNode.o Source_Files/SearchNode.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/SwitchCase.o Source_Files/SwitchCase.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/PostorderTraverse.o Source_Files/PostorderTraverse.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/MinValNode.o Source_Files/MinValNode.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/PrintNode.o Source_Files/PrintNode.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/PreorderTraverse.o Source_Files/PreorderTraverse.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/PrintNotation.o Source_Files/PrintNotation.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/MaxValNode.o Source_Files/MaxValNode.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -c -o Object_Files/InsertNode.o Source_Files/InsertNode.c
+gcc -I./Header_File -Wall -Werror -g -gdwarf-2 -o Executable_File/BST Object_Files/Free_BST.o Object_Files/InorderTraverse.o Object_Files/DeleteNode.o Object_Files/InputInteger.o Object_Files/String_to_Int.o Object_Files/CreateNewNode.o Object_Files/Main.o Object_Files/SearchNode.o Object_Files/SwitchCase.o Object_Files/PostorderTraverse.o Object_Files/MinValNode.o Object_Files/PrintNode.o Object_Files/PreorderTraverse.o Object_Files/PrintNotation.o Object_Files/MaxValNode.o Object_Files/InsertNode.o
+
+gaurav@gaurav:~/Binary_Search_Tree$ make run
+././Executable_File/BST
+
+
+--------------------------------------------
+	-- Binary Search Tree --
+--------------------------------------------
+
+
+SUCCESS: Inserted Key: 50
+
+SUCCESS: Inserted Key: 30
+
+SUCCESS: Inserted Key: 20
+
+SUCCESS: Inserted Key: 40
+
+SUCCESS: Inserted Key: 70
+
+SUCCESS: Inserted Key: 60
+
+SUCCESS: Inserted Key: 80
+
+----------------------------------------
+
+	-- MENU --
+1. Insert Node
+2. Delete Node
+3. Search Node
+4. Minimum Value Node
+5. Maximum Value Node
+6. Print Notation
+7. Exit
+
+Enter Choice: 1
+
+
+	-- Insert Node --
+----------------------------------------
+
+Enter Key Value: 90
+
+SUCCESS: Inserted Key: 90
+
+----------------------------------------
+
+----------------------------------------
+
+	-- MENU --
+1. Insert Node
+2. Delete Node
+3. Search Node
+4. Minimum Value Node
+5. Maximum Value Node
+6. Print Notation
+7. Exit
+
+Enter Choice: 1
+
+
+	-- Insert Node --
+----------------------------------------
+
+Enter Key Value: 10
+
+SUCCESS: Inserted Key: 10
+
+----------------------------------------
+
+----------------------------------------
+
+	-- MENU --
+1. Insert Node
+2. Delete Node
+3. Search Node
+4. Minimum Value Node
+5. Maximum Value Node
+6. Print Notation
+7. Exit
+
+Enter Choice: 6
+
+
+	-- Notation of BST --
+----------------------------------------
+
+-- Inorder Traversal of BST --
+ 10 20 30 40 50 60 70 80 90
+
+-- Preorder Traversal of BST --
+ 50 30 20 10 40 70 60 80 90
+
+-- Postorder Traversal of BST --
+ 10 20 40 30 60 90 80 70 50
+
+----------------------------------------
+
+----------------------------------------
+
+	-- MENU --
+1. Insert Node
+2. Delete Node
+3. Search Node
+4. Minimum Value Node
+5. Maximum Value Node
+6. Print Notation
+7. Exit
+
+Enter Choice: 2
+
+
+	-- Delete Node --
+----------------------------------------
+
+Enter Value to Delete: 50
+
+SUCCESS: Node Deleted
+
+----------------------------------------
+
+----------------------------------------
+
+	-- MENU --
+1. Insert Node
+2. Delete Node
+3. Search Node
+4. Minimum Value Node
+5. Maximum Value Node
+6. Print Notation
+7. Exit
+
+Enter Choice: 6
+
+
+	-- Notation of BST --
+----------------------------------------
+
+-- Inorder Traversal of BST --
+ 10 20 30 40 60 70 80 90
+
+-- Preorder Traversal of BST --
+ 60 30 20 10 40 70 80 90
+
+-- Postorder Traversal of BST --
+ 10 20 40 30 90 80 70 60
+
+----------------------------------------
+
+----------------------------------------
+
+	-- MENU --
+1. Insert Node
+2. Delete Node
+3. Search Node
+4. Minimum Value Node
+5. Maximum Value Node
+6. Print Notation
+7. Exit
+
+Enter Choice: 3
+
+
+	-- Search Node --
+----------------------------------------
+
+Enter Value to Search: 90
+
+-- Node Found --
+Left Pointer: (nil)
+Key: 90
+Right Pointer: (nil)
+
+SUCCESS: Node Found
+
+----------------------------------------
+
+----------------------------------------
+
+	-- MENU --
+1. Insert Node
+2. Delete Node
+3. Search Node
+4. Minimum Value Node
+5. Maximum Value Node
+6. Print Notation
+7. Exit
+
+Enter Choice: 4
+
+
+	-- Minimum Value Node --
+----------------------------------------
+
+Left Pointer: (nil)
+Key: 10
+Right Pointer: (nil)
+
+----------------------------------------
+
+----------------------------------------
+
+	-- MENU --
+1. Insert Node
+2. Delete Node
+3. Search Node
+4. Minimum Value Node
+5. Maximum Value Node
+6. Print Notation
+7. Exit
+
+Enter Choice: 5
+
+
+	-- Maximum Value Node --
+----------------------------------------
+
+Left Pointer: (nil)
+Key: 90
+Right Pointer: (nil)
+
+----------------------------------------
+
+----------------------------------------
+
+	-- MENU --
+1. Insert Node
+2. Delete Node
+3. Search Node
+4. Minimum Value Node
+5. Maximum Value Node
+6. Print Notation
+7. Exit
+
+Enter Choice: 6
+
+
+	-- Notation of BST --
+----------------------------------------
+
+-- Inorder Traversal of BST --
+ 10 20 30 40 60 70 80 90
+
+-- Preorder Traversal of BST --
+ 60 30 20 10 40 70 80 90
+
+-- Postorder Traversal of BST --
+ 10 20 40 30 90 80 70 60
+
+----------------------------------------
+
+----------------------------------------
+
+	-- MENU --
+1. Insert Node
+2. Delete Node
+3. Search Node
+4. Minimum Value Node
+5. Maximum Value Node
+6. Print Notation
+7. Exit
+
+Enter Choice: 7
+
+----------------------------------------
+
+
+----------------------------------------------
+
+Releasing Node: 10
+
+Releasing Node: 20
+
+Releasing Node: 40
+
+Releasing Node: 30
+
+Releasing Node: 90
+
+Releasing Node: 80
+
+Releasing Node: 70
+
+Releasing Node: 60
+
+
+-- Dynamically Allocated Memory is Released --
+
+----------------------------------------------
+
+
+----------------------------------------------
+		--- EXIT ---
+----------------------------------------------
+

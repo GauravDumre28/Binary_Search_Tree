@@ -23,9 +23,20 @@ int main()
         print("\n\nERROR: Invalid Input Limit Reached\n");
     }
 
-    print("\n\n--------------------------------------------\n");
-    print("\t\t-- EXIT --");
-    print("\n--------------------------------------------\n\n");
+    print("\n\n----------------------------------------------\n");
+    // Calling Function to Release Dynamically Allocated Memory
+    if(NULL == free_node(root)) {
+        print("\n\n-- Dynamically Allocated Memory is Released --");
+        print("\n\n----------------------------------------------\n\n");
+    } else {
+        print("\n\nALERT:\n-- Dynamically Allocated Memory is "
+            "Not Released --");
+        print("\n\n----------------------------------------------\n");
+    }
 
+    print("\n----------------------------------------------\n");
+    print("\t\t--- EXIT ---");
+    print("\n----------------------------------------------\n\n");
+    
     return 0; 
 } 

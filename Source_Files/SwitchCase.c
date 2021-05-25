@@ -25,6 +25,7 @@ int switch_case(Record* root)
         __fpurge(stdin);
 
         print("\n----------------------------------------\n");
+        print("\n-- MENU --");
         print("\n1. Insert Node");
         print("\n2. Delete Node");
         print("\n3. Search Node");

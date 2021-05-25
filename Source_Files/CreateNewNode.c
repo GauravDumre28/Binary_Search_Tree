@@ -7,7 +7,7 @@
 // Function to Create New Node
 Record *create_new_node(int item)
 { 
-    // Dynamically Allocating Meory for Node 
+    // Dynamically Allocating Memory for Node 
     Record *new_node = (Record *)malloc(sizeof(Record)); 
     
     // Assigning Key and Default Pointer to Node

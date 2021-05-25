@@ -20,11 +20,7 @@ Record *delete_node(Record* node, int value)
         node_found = 1;
 
         if((NULL != node->left) && (NULL != node->right)) {
-            node = node->right;
-
-            while (node && node->left != NULL) {
-                node = node->left;
-            }
+            node = min_value_node(node->right);
             temp->key = node->key;
             temp->right = delete_node(temp->right, node->key);
         } else {
@@ -37,6 +33,7 @@ Record *delete_node(Record* node, int value)
             }
             
             node->left = node->right = NULL;
+            // Releasing Dynamically Allocated Memory
             free(node);
         }
     } else if(value < node->key) {

@@ -34,6 +34,9 @@ Record *create_new_node(int);
 // Recursion Function to Insert Node
 Record *insert_node(Record *, int);
 
+// Recursion Function to Release Dynamically Allocated Momory to the Nodes
+Record* free_node(Record *);
+
 // Recursion Function to Delete Node
 Record *delete_node(Record *, int);
 
