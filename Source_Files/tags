@@ -6,16 +6,17 @@
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 create_new_node	CreateNewNode.c	/^Record *create_new_node(int item)$/;"	f
 delete_node	DeleteNode.c	/^Record *delete_node(Record* node, int value) $/;"	f
+free_node	Free_BST.c	/^Record *free_node(Record *node) $/;"	f
 inorder_traverse	InorderTraverse.c	/^void inorder_traverse(Record *node) $/;"	f
 input_integer	InputInteger.c	/^int input_integer()$/;"	f
 insert_node	InsertNode.c	/^Record* insert_node(Record* node, int key) $/;"	f
 main	Main.c	/^int main() $/;"	f
-max_value_node	MaxValNode.c	/^void max_value_node(Record* node) $/;"	f
-min_value_node	MinValNode.c	/^void min_value_node(Record* node) $/;"	f
+max_value_node	MaxValNode.c	/^Record *max_value_node(Record *node) $/;"	f
+min_value_node	MinValNode.c	/^Record *min_value_node(Record *node) $/;"	f
 postorder_traverse	PostorderTraverse.c	/^void postorder_traverse(Record *node) $/;"	f
 preorder_traverse	PreorderTraverse.c	/^void preorder_traverse(Record *node) $/;"	f
 print_node	PrintNode.c	/^void print_node(Record *node)$/;"	f
-print_notation	PrintNotation.c	/^void print_notation(Record* node)$/;"	f
+print_notation	PrintNotation.c	/^void print_notation(Record *node)$/;"	f
 search_node	SearchNode.c	/^void search_node(Record* node, int value) $/;"	f
 str_to_int	String_to_Int.c	/^int str_to_int(char *string, unsigned int *number)$/;"	f
 switch_case	SwitchCase.c	/^int switch_case(Record* root) $/;"	f
